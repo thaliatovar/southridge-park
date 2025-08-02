@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Rentals - Southridge Park</title>
+    <link href="favicon.ico" rel="icon">
+  </head>
+
+  <body>
+    <a href="#main-content">Skip to main content</a>
+    <header role="banner">
+      <h1>Southridge Park Rentals</h1>
+      <img src="images/logo.gif" alt="Southridge logo." width="100" height="127">
+      <nav role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-content" tabindex="-1" role="main">
+      <h2>Rent with Us!</h2>
+      <figure>
+        <img src="images/shelter.jpg" width="350" height="234" alt="Open shelter with several picnic tables in Southridge Park.">
+        <figcaption>Southridge Park's South Shelter</figcaption>
+      </figure>
+      <p>Our park offers two shelters based on your needs! The South Shelter holds up to 50 people, making it great for small parties or family gatherings. The North Shelter is larger and can accommodate up to 150 people, perfect for big celebrations or events. Both shelters have picnic tables and grills for cooking. See the Shelter Rental Fee table below for pricing.</p>
+      <div>
+        <table>
+          <caption>Shelter Rental Fee</caption>
+          <tr>
+            <th rowspan="2">Shelter</th>
+            <th rowspan="2">Accommodates</th>
+            <th colspan="2">Residents</th>
+            <th colspan="2">Non-Residents</th>
+          </tr>
+          <tr>
+            <th scope="col">4 Hours</th>
+            <th scope="col">8 Hours</th>
+            <th scope="col">4 Hours</th>
+            <th scope="col">8 Hours</th>
+          </tr>
+          <tr>
+            <th scope="row">South Shelter</th>
+            <td>Up to 50 people</td>
+            <td>$80</td>
+            <td>$150</td>
+            <td>$125</td>
+            <td>$240</td>
+          </tr>
+          <tr>
+            <th scope="row">North Shelter</th>
+            <td>Up to 150 people</td>
+            <td>$125</td>
+            <td>$240</td>
+            <td>$200</td>
+            <td>$370</td>
+          </tr>
+        </table>
+      </div>
+      <section>
+        <h3>Rental Form</h3>
+        <p>Use the form below to apply for a shelter rental.</p>
+        <p><small>Fields with * are required</small></p>
+        <form action="form-tester.html" method="get" role="form">
+          <fieldset>
+            <legend>Contact Info</legend>
+            <label for="name">* Name:</label>
+            <input type="text" id="name" name="Name" required><br>
+            <label for="email">* Email:</label>
+            <input type="email" id="email" name="Email" required><br>
+            <label for="phone">* Phone:</label>
+            <input type="tel" id="phone" name="Phone" required>
+          </fieldset>
+          <fieldset>
+            <legend>Event Details</legend>
+            <label for="date">* Event Date:</label>
+            <input type="date" id="date" name="Date" required><br>
+            <label for="number">* Number of Attendees:</label>
+            <input type="number" id="number" name="Number of Attendees" min="1" max="150" required><br>
+            <label for="type">* Event Type:</label>
+            <input type="text" id="type" name="Event Type" list="events" required>
+            <datalist id="events">
+              <option>Birthday</option>
+              <option>Cookout</option>
+              <option>Family Reunion</option>
+              <option>Field Day</option>
+              <option>Fundraiser</option>
+              <option>Mitzvah</option>
+              <option>Quincaenera</option>
+              <option>Wedding</option>
+            </datalist>
+            <fieldset>
+              <legend>* Event Length:</legend>
+              <input type="radio" name="Hours" id="4hrs" value="4 hours" required>
+              <label for="4hrs">Four Hours</label><br>
+              <input type="radio" name="Hours" id="8hrs" value="8 hours">
+              <label for="8hrs">Eight Hours</label>
+            </fieldset>
+            <fieldset>
+              <legend>* Are you a resident?</legend>
+              <input type="radio" name="Resident" id="yes-resident" value="Yes" required>
+              <label for="yes-resident">Yes</label><br>
+              <input type="radio" name="Resident" id="non-resident" value="No">
+              <label for="non-resident">No</label>
+            </fieldset>
+            <label for="comments">Other details, comments, or requests?</label><br>
+            <textarea cols="50" rows="6" id="comments" name="Comments"></textarea>
+          </fieldset>
+          <label for="referral">How did you hear about us?</label>
+          <select id="referral" name="Referral">
+            <option>Choose one</option>
+            <option>Google</option>
+            <option>Social Media</option>
+            <option>Friend</option>
+            <option>Other</option>
+          </select><br>
+          <input type="checkbox" id="terms" name="Terms" value="Agree to Terms" required>
+          <label for="terms">* I have read and agree to the terms and conditions</label><br>
+          <input type="submit" value="Apply">
+        </form>
+      </section>
+    </main>
+    <aside role="complementary">
+      <h3>Rental Policies</h3>
+      <p>Rentals are for a set time, and guests must clean up after their event. Loud music, alcohol, and open flames (except for park grills) are not allowed. To book a shelter, visitors must fill out the application form. After reviewing the application, the park will contact them to confirm details and discuss payment.</p>
+    </aside>
+    <footer role="contentinfo">
+      <p><small>&copy; 2025 town of Wilmington, North Carolina</small></p>
+    </footer>
+
+  </body>
+
+</html>
